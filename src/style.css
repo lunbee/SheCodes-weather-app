@@ -1,0 +1,10 @@
+.container {
+  border: 40px solid;
+  border-color: cadetblue;
+  background-color: cadetblue;
+  border-radius: 20px;
+}
+
+.search-form {
+  margin-bottom: 20px;
+}
