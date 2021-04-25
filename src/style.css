@@ -1,5 +1,5 @@
-.container {
-  border: 40px solid;
+.weather-app {
+  padding: 40px;
   border-color: cadetblue;
   background-color: cadetblue;
   border-radius: 20px;
@@ -7,4 +7,18 @@
 
 .search-form {
   margin-bottom: 20px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.weather-app-wrapper {
+  margin: 30px auto;
+  max-width: 600px;
 }
