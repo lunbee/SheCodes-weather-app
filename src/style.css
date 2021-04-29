@@ -3,6 +3,12 @@
   border-color: cadetblue;
   background-color: cadetblue;
   border-radius: 20px;
+  margin-top: 40px;
+  max-width: 600px;
+}
+
+h1 {
+  display: inline;
 }
 
 .search-form {
@@ -16,9 +22,10 @@ ul {
 
 li {
   list-style: none;
+  text-transform: capitalize;
 }
 
 .weather-app-wrapper {
-  margin: 30px auto;
+  margin: 20px auto;
   max-width: 600px;
 }
