@@ -28,4 +28,6 @@ li {
 .weather-app-wrapper {
   margin: 20px auto;
   max-width: 600px;
+  margin-top: -20px;
+  margin-bottom: -15px;
 }
