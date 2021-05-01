@@ -78,8 +78,7 @@ function handleSubmit(event) {
 function displayFahrenheit (event){
     event.preventDefault()
     let temperatureElement = document.querySelector("#temperature")
-    celciusLink.classlist.add("active")
-    fahrenheitLink.classlist.add("active")
+ 
     let fahrenheitTemperature = (celciusTemperature * 9) / 5 + 32
     temperatureElement.innerHTML = Math.round (fahrenheitTemperature)
 
