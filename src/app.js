@@ -52,7 +52,12 @@ function displayTemperature(response) {
     iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png` ) 
 
     iconElement.setAttribute("alt", response.data.weather[0].description )
+
+    celciusTemperature = response.data.main.temp
+
 }
+
+search("New York")
 
 function search(city){
 
@@ -67,10 +72,36 @@ function handleSubmit(event) {
     event.preventDefault()
     let cityInputElement = document.querySelector("#city-input")
     search(cityInputElement.value)
-    console.log(cityInputElement.value)
+    
 }
+
+function displayFahrenheit (event){
+    event.preventDefault()
+    let temperatureElement = document.querySelector("#temperature")
+    celciusLink.classlist.add("active")
+    fahrenheitLink.classlist.add("active")
+    let fahrenheitTemperature = (celciusTemperature * 9) / 5 + 32
+    temperatureElement.innerHTML = Math.round (fahrenheitTemperature)
+
+}
+
+function displayCelcius (event) {
+    event.preventDefault()
+    let temperatureElement = document.querySelector("#temperature")
+    temperatureElement.innerHTML = Math.round(celciusTemperature)
+}
+
+let celciusTemperature = null
 
 let form = document.querySelector("#search-form")
 form.addEventListener("submit", handleSubmit)
+
+let fahrenheit = document.querySelector("#fahrenheit")
+fahrenheit.addEventListener("click", displayFahrenheit)
+
+let celcius = document.querySelector("#celcius")
+celcius.addEventListener("click", displayCelcius)
+
+
 
 

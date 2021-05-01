@@ -23,21 +23,18 @@
             id="city-input" 
             type="search" 
             placeholder="Enter a city.." 
-            class="form-control search-input"
-            autocomplete="off">
+            class="form-control search-input">
             </div>
             <div class="col-3">
             <input 
-            type="submit" 
-            class="btn btn-primary w-100" 
-            value="search">
+            type="submit" class="btn btn-primary w-100" value="search">
             </div>
             </div>
         </form>
         <div class="container-column2">
         <div class="row">
-        <div class="col">
-    <h1 id="city">New York</h1>
+        <div class="col-6">
+    <h1 class="city" id="city">New York</h1>
     <ul>
         <li id="date">
             Sunday 12:21
@@ -53,64 +50,27 @@
         </li>
     </ul>
     </div>
-    <div class="col">
+    <div class="col-6">
+        
+
     <img 
     src="" 
     id="icon"
     class="float left">
     
-    <h1 id="temperature">10</h1><h1>°C</h1>
+    <h1 id="temperature">10</h1> <span class="units"> <a href="#" class="active" id="celcius">°C</a>  | <a href="#" id="fahrenheit">°F</a> </span>
     </div>
     </div>
     </div>
     
 
-    <div class="container-column">
-    <div class="row">
-    <div class="col">
-        Sun
-        <br>
-        🌤
-        <br>
-        15° 10°
-    </div>
-    <div class="col">
-        Sun
-        <br>
-        🌤
-        <br>
-        15° 10°
-    </div>
-    <div class="col">
-        Sun
-        <br>
-        🌤
-        <br>
-        15° 10°
-    </div>
-    <div class="col">
-        Sun
-        <br>
-        🌤
-        <br>
-        15° 10°
-    </div>
-    <div class="col">
-        Sun
-        <br>
-        🌤
-        <br>
-        15° 10°
-    </div>
-    </div>
-    </div>
 
     </div>
     </div>
 
     <a href="https://github.com/lunbee/SheCodes-weather-app" target="_blank" > Open source code </a>  by Luna Beeker </a>
     
-  
+    
     </div>
     <script src="src/app.js"></script>
 </body>

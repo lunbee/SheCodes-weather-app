@@ -4,11 +4,15 @@
   background-color: cadetblue;
   border-radius: 20px;
   margin-top: 40px;
-  max-width: 600px;
+  max-width: 500px;
 }
 
 h1 {
   display: inline;
+}
+
+.city {
+  font-size: 30px;
 }
 
 .search-form {
@@ -23,11 +27,24 @@ ul {
 li {
   list-style: none;
   text-transform: capitalize;
+  margin-left: -32px;
+  font-size: 15px;
 }
 
 .weather-app-wrapper {
   margin: 20px auto;
   max-width: 600px;
-  margin-top: -20px;
-  margin-bottom: -15px;
+  margin-top: -10px;
+  margin-bottom: 15px;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.weather-temperature.active {
+  color: black;
+  cursor: default;
+}
+
+:link {
+  text-decoration: none;
 }
