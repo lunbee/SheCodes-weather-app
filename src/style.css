@@ -35,7 +35,7 @@ li {
   margin: 20px auto;
   max-width: 600px;
   margin-top: -10px;
-  margin-bottom: 15px;
+  margin-bottom: 0px;
   margin-left: -10px;
   margin-right: -10px;
 }
@@ -47,4 +47,18 @@ li {
 
 :link {
   text-decoration: none;
+}
+
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.5;
+}
+
+.min-temperature {
+  opacity: 0.5;
 }
