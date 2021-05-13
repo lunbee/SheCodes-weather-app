@@ -62,3 +62,7 @@ li {
 .min-temperature {
   opacity: 0.5;
 }
+
+.min-max-temperature {
+  font-size: 12px;
+}
