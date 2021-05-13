@@ -78,10 +78,8 @@ function displayForecast(response) {
 
 
 function getForecast(coordinates){
-    console.log(coordinates)
     let apiKey = "adc68ed824eaa0c6b8e179f70c0efacc"
     let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`
-    console.log(apiUrl)
     axios.get(apiUrl).then(displayForecast)
 }
 
@@ -118,7 +116,6 @@ function displayTemperature(response) {
 }
 
 search("New York")
-
 
 
 function search(city){
