@@ -23,7 +23,8 @@ function formatDate(timestamp) {
         
     let day = days[date.getDay()]
     
-    return `${days[day]} ${hours}:${minutes}`
+    return `${day} ${hours}:${minutes}`
+
 }
 
 
